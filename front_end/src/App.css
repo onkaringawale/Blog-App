@@ -1,0 +1,162 @@
+*{
+  padding:0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.navbar-header{
+  position: sticky;
+  top: 0;
+  width:100%;
+  height: 40px;
+  padding: 15px 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(79deg,rgb(3,3,154),rgb(207,8,41),rgb(4,4,150));
+}
+.link{
+  color: white;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+.signup_container,.signIn_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.signup_form,.signIn_form{
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+}
+.signup_form form,.signIn_form form{
+  padding-top: 20px;
+  
+}
+.signup_form form label,.signIn_form form label{
+  padding: 20px 0px;
+  
+}
+
+.signup_form form input,.signIn_form form input{
+  margin:15px 0px;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 2px;
+  width: 100%;
+  border: 1px solid rgb(216,213,213);
+}
+.signup_form button,.signIn_form button{
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid rgb(216,213,213);
+}
+
+.signup_form button,.signIn_form button{
+  background-color: rgb(3,117,18);
+}
+.signup_form form button,.signIn_form form button{
+  background-color: rgb(17,80,218);
+}
+.btn_input{
+  all: unset;
+  cursor: pointer;
+
+}
+.post_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.post_form{
+  width: 50%;
+  padding: 20px;
+  border: 1px solid grey;
+}
+.post_form input, .post_form textarea, .post_form button{
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0px;
+}
+.post_form file{
+  border: 1px solid grey;
+}
+.post_form button{
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+.allPostsCard{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 10px;
+  padding: 10px;
+ 
+}
+.card,.postCard {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width:23%;
+  border-radius: 10px;
+  height: 300px;
+  background: rgb(238,174,202)
+  linear-gradient(45deg, rgb(236 53 133 / 8%) 50%, rgb(38 69 251 / 47%) 100%);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.PostedImg{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+ 
+}
+.PostedImg img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.editCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.seepostButton {
+  background-color: aqua;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.seePostDiv{
+  display: none;
+}
+
+.card:hover > .seePostDiv {
+  display: flex;
+  justify-content: center;
+}
+.card:hover > *:not(.seePostDiv) {
+  filter: blur(1px);
+}
